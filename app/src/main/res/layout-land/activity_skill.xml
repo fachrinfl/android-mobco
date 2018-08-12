@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controllers.SkillActivity">
+
+    <ImageView
+        android:id="@+id/ivBackgroundCommunity"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/skill_content_description"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/background_skill" />
+
+    <TextView
+        android:id="@+id/tvLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/nunito_black"
+        android:text="@string/strLogo"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="210dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/nunito_light"
+        android:singleLine="true"
+        android:text="@string/str_my_skill"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLogo" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <ToggleButton
+            android:id="@+id/btnBeginner"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toggle_button"
+            android:fontFamily="@font/nunito_extrabold"
+            android:onClick="onBeginnerButton"
+            android:text="@string/str_beginner"
+            android:textColor="@android:color/background_light"
+            android:textOff="@string/str_beginner"
+            android:textOn="@string/str_beginner"
+            tools:layout_editor_absoluteX="161dp"
+            tools:layout_editor_absoluteY="210dp" />
+
+        <ToggleButton
+            android:id="@+id/btnIntermediate"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/toggle_button"
+            android:fontFamily="@font/nunito_extrabold"
+            android:onClick="onIntermediateButton"
+            android:text="@string/str_intermediate"
+            android:textColor="@android:color/background_light"
+            android:textOff="@string/str_intermediate"
+            android:textOn="@string/str_intermediate"
+            android:textSize="16sp" />
+
+        <ToggleButton
+            android:id="@+id/btnAdvanced"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toggle_button"
+            android:fontFamily="@font/nunito_extrabold"
+            android:onClick="onAdvancedButton"
+            android:text="@string/str_advanced"
+            android:textColor="@android:color/background_light"
+            android:textOff="@string/str_advanced"
+            android:textOn="@string/str_advanced"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSkill"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/button_primary"
+        android:fontFamily="@font/nunito_light"
+        android:onClick="skillNextClicked"
+        android:text="@string/str_next"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="@+id/ivBackgroundCommunity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

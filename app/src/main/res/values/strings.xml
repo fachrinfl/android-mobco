@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">MobCo</string>
+    <string name="logo_content_description">For background welcome</string>
+    <string name="community_content_description">For background community</string>
+    <string name="finish_content_description">For background search</string>
+    <string name="skill_content_description">For background skill</string>
+    <string name="strLogo">MobCo</string>
+    <string name="strHeadline">Improve your skill</string>
+    <string name="strSubHeadline">with your community</string>
+    <string name="strStarted">Get Started</string>
+    <string name="str_java">Java</string>
+    <string name="str_kotlin">Kotlin</string>
+    <string name="str_flutter">Flutter</string>
+    <string name="str_next">Next</string>
+    <string name="str_choose_development">Please select your focus.</string>
+    <string name="description_community">With what you develop android applications :</string>
+    <string name="str_my_skill">I am a</string>
+    <string name="str_beginner">Beginner</string>
+    <string name="str_intermediate">Intermediate</string>
+    <string name="str_advanced">Advanced</string>
+    <string name="str_select_skill">Please select a skill level</string>
+</resources>
