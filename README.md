@@ -1,4 +1,4 @@
-# Android My Profile Design
+# Android MobCo App
 Simple app using Kotlin and ConstraintLayout 
 <br/>
 ![screenshot](https://user-images.githubusercontent.com/28708584/43998474-c7445550-9e20-11e8-9069-93ab49f4817c.png)
